@@ -12,4 +12,4 @@ module.exports = (robot) ->
 				res.reply body
 
 	robot.hear /robot/i (res) ->
-		res.send "Robot? Who said I was a robot?"
+		res.send "Robot? Who said I was a robot??"
