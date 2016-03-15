@@ -5,4 +5,4 @@
 module.exports = (robot) ->
 
 	robot.respond /google/i, (res) ->
-		res.reply "Google your own shit."
+		res.reply "so you want me to google #{res}?"
