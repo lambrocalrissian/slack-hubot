@@ -6,4 +6,4 @@ module.exports = (robot) ->
 
 	robot.respond /google (.*) /i, (res) ->
 		userQuery = res.match[1]
-		res.reply "you want me to google #{userQuery}?"
+		res.reply "you want me to google " + userQuery + "?"
