@@ -2,7 +2,7 @@
 # some funny happy times. 
 
 
-module.exports =(robot) ->
+module.exports = (robot) ->
 
-	robot.hear /google/i (res) ->
+	robot.hear /google/i, (res) ->
 		res.send "Google your own shit."
