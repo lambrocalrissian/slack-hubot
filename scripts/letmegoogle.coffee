@@ -4,8 +4,16 @@
 module.exports = (robot) ->
 
 	robot.respond /google (.*)/i, (res) ->
-		userQuery = res.match[1]
-		newQuery = userQuery.replace(/\ /g,"+")
-		res.http("http://tinyurl.com/api-create.php?url=http://lmgtfy.com/?q=" + newQuery)
-			.get() (error, response, body) ->
-				res.reply body
+		totalJerk = Math.random()
+		if totalJerk > 0.5
+			userQuery = res.match[1]
+			newQuery = userQuery.replace(/\ /g,"+")
+			res.http("http://tinyurl.com/api-create.php?url=http://lmgtfy.com/?q=" + newQuery)
+				.get() (error, response, body) ->
+					res.reply body
+		if totalJerk < 0.5
+			userQuery = res.match[1]
+			newQuery = userQuery.replace(/\ /g,"+")
+			res.http("http://tinyurl.com/api-create.php?url=http://google.com/?q=" + newQuery)
+				.get() (error, response, body) ->
+					res.reply body
