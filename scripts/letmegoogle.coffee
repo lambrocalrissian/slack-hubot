@@ -14,6 +14,6 @@ module.exports = (robot) ->
 		if totalJerk < 0.5
 			userQuery = res.match[1]
 			newQuery = userQuery.replace(/\ /g,"+")
-			res.http("http://tinyurl.com/api-create.php?url=http://google.com/?q=" + newQuery)
+			res.http("http://tinyurl.com/api-create.php?url=http://google.com/search?q=" + newQuery)
 				.get() (error, response, body) ->
 					res.reply body
