@@ -10,3 +10,6 @@ module.exports = (robot) ->
 		res.http("http://tinyurl.com/api-create.php?url=http://lmgtfy.com/?q=" + newQuery)
 			.get() (error, response, body) ->
 				res.reply body
+
+	robot.hear /robot/i (res) ->
+		res.send "Robot? Who said I was a robot?"
