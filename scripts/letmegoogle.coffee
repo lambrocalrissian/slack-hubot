@@ -11,5 +11,5 @@ module.exports = (robot) ->
 			.get() (error, response, body) ->
 				res.reply body
 
-	robot.hear /robot/i (res) ->
+	robot.hear /robot/i, (res) ->
 		res.send "Robot? Who said I was a robot??"
