@@ -1,3 +1,8 @@
+# This is my hubot I use for fun stuff for our slack channel. Below is the README for all hubots. 
+#
+#
+#
+
 # hubot
 
 hubot is a chat bot built on the [Hubot][hubot] framework. It was
