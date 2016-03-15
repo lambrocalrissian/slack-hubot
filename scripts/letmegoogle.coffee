@@ -8,4 +8,4 @@ module.exports = (robot) ->
 		userQuery = res.match[1]
 		newQuery = userQuery.replace(/\ /g,"+")
 		tinyUrl = "http://tinyurl.com/api-create.php?url=http://lmgtfy.com/?q=" + newQuery
-		res.reply tinyUrl
+		res.reply tinyUrl.get(body)
