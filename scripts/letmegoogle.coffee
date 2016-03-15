@@ -4,5 +4,5 @@
 
 module.exports = (robot) ->
 
-	robot.hear /google/i, (res) ->
-		res.send "Google your own shit."
+	robot.respond /google/i, (res) ->
+		res.reply "Google your own shit."
