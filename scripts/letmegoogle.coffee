@@ -19,12 +19,3 @@ module.exports = (robot) ->
 					res.reply body
 	robot.respond /gif (.*)/i, (res) ->
 		userQuery = res.match[1]
-		
-	enterReplies = ['Searchbot online', 'Well hello there','Ok shut up whatever I\'m here']
-	leaveReplies = ['Searchbot powering down','Goodnight byebye','I\'m leaving this shithole']
-
-	robot.enter(res) ->
-		res.send res.random enterReplies
-	robot.leave(res) ->
-		res.send res.random leaveReplies 
-	
