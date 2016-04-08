@@ -17,5 +17,3 @@ module.exports = (robot) ->
 			res.http("http://tinyurl.com/api-create.php?url=http://google.com/search?q=" + newQuery)
 				.get() (error, response, body) ->
 					res.reply body
-	robot.respond /gif (.*)/i, (res) ->
-		userQuery = res.match[1]
