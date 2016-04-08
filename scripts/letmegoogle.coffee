@@ -17,3 +17,11 @@ module.exports = (robot) ->
 			res.http("http://tinyurl.com/api-create.php?url=http://google.com/search?q=" + newQuery)
 				.get() (error, response, body) ->
 					res.reply body
+
+	enterPhrases = ['Searchbot online','Yes I\'m here what','Let me google that shit']
+	leavePhrases = ['Searchbot offline','Shut it all down','Shut up bye']
+
+	robot.enter (res) ->
+		res.send res.random enterPhrases
+	robot.leave (res) ->
+		res.send res.random leavePhrases
