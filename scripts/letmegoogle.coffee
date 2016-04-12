@@ -18,8 +18,8 @@ module.exports = (robot) ->
 				.get() (error, response, body) ->
 					res.reply body
 
-	enterPhrases = ['Searchbot online','Yes I\'m here what','Let me google that shit']
-	leavePhrases = ['Searchbot offline','Shut it all down','Shut up bye']
+	enterPhrases = ['I see you','Oh look its old so and so','My body is ready']
+	leavePhrases = ['I\'ve always hated that guy','Seriously though, miss that guy','Shut up bye already']
 
 	robot.enter (res) ->
 		res.send res.random enterPhrases
