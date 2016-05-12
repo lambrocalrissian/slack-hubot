@@ -34,7 +34,7 @@ module.exports = (robot) ->
 		option1 = res.match[1]
 		option2 = res.match[2]
 		coinFlip = Math.random()
-		if coinFlip >= 0.5
+		if coinFlip > 0.5
 			res.reply(option1)
 		else
 			res.reply(option2)
