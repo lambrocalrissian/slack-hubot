@@ -30,11 +30,11 @@ module.exports = (robot) ->
 	robot.hear /my boy searchbot/i, (res) ->
 		res.send res.random whatups
 
-	robot.respond /choose (.*) or (.*)/i (res) ->
-		option1 = res.match[1]
-		option2 = res.match[2]
-		coinFlip = Math.random()
-		if coinFlip >= 0.5
-			res.reply(option1)
-		else
-			res.reply(option2)
+	#robot.respond /choose (.*) or (.*)/i (res) ->
+	#	option1 = res.match[1]
+	#	option2 = res.match[2]
+	#	coinFlip = Math.random()
+	#	if coinFlip >= 0.5
+	#		res.reply(option1)
+	#	else
+	#		res.reply(option2)
