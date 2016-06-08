@@ -26,7 +26,6 @@ module.exports = (robot) ->
 	robot.leave (res) ->
 		res.send res.random leavePhrases
 	whatups = ['thats me what up','the hell you lookin\' at?','yeah me im the searchbot']
-
 	robot.hear /my boy searchbot/i, (res) ->
 		res.send res.random whatups
 
