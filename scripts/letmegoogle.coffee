@@ -37,5 +37,5 @@ module.exports = (robot) ->
 			res.reply(option1)
 		else
 			res.reply(option2)
-	robot.catchAll /changes detected on http:/i, (res) ->
+	robot.hear /changes detected on http:/i, (res) ->
 		res.send '@channel oh SHIT maybe badges!'
